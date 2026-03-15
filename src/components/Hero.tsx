@@ -108,7 +108,7 @@ export default function Hero() {
           </div>
 
           {/* Floating info card */}
-          <div className="absolute left-0 px-5 py-4 border shadow-2xl bottom-4 bg-ink/90 border-blue-800/60 backdrop-blur-sm">
+          <div className="absolute left-0 px-5 py-4 border shadow-2xl bottom-1 lg:bottom-5 bg-ink/90 border-blue-800/60 backdrop-blur-sm">
             <div className="mb-1 font-mono text-xs tracking-widest text-blue-400 uppercase">Lavatrice</div>
             <div className="text-xl font-bold text-white font-condensed">4 × 50 KG</div>
             <div className="font-mono text-xs text-white/40 mt-0.5">Washer Extractors</div>

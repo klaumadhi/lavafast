@@ -6,7 +6,7 @@ const machines = [
     img: '/images/washer.png',
     label: 'Washer Extractor',
     name: 'Lavatriçe Industriale',
-    qty: '4 copë',
+    qty: '',
     capacity: '50 KG / secila',
     desc: 'Lavatriçe industriale me kapacitet 50 KG, me sistem ekstraksioni të avancuar që largon lagështinë maksimale para tharjes.',
     specs: ['Kapacitet: 50 KG', 'G-faktor i lartë', 'Program i programueshëm', 'Konsum i ulët energjie'],
@@ -16,7 +16,7 @@ const machines = [
     img: '/images/dryer.jpg',
     label: 'Tumble Dryer',
     name: 'Tharëse Industriale',
-    qty: '4 copë',
+    qty: '',
     capacity: '50 KG / secila',
     desc: 'Tharëse të mëdha industriale me teknologji moderne të kontrollit të temperaturës për rezultate perfekte pa dëmtuar tekstilet.',
     specs: ['Kapacitet: 50 KG', 'Kontroll temperaturi', 'Timer dixhital', 'Energji-efikase'],
@@ -26,7 +26,7 @@ const machines = [
     img: '/images/iron.jpg',
     label: 'Flatwork Ironer',
     name: 'Hekurosëse Flatwork',
-    qty: '1 copë',
+    qty: '',
     capacity: '3300 mm gjerësi',
     desc: 'Hekurosëse industriale flatwork me gjerësi 3300mm — e lidhur direkt me makinën palosëse. Ideal për çarçafë dhe tekstile hotelerie.',
     specs: ['Gjerësi: 3300mm', 'Shpejtësi e rregullueshme', 'Sistem automatik', 'E lidhur me folder'],
@@ -36,7 +36,7 @@ const machines = [
     img: '/images/folder.jpg',
     label: 'Folding Machine',
     name: 'Makinë Palosëse',
-    qty: '1 copë',
+    qty: '',
     capacity: '3300 mm gjerësi',
     desc: 'Makinë palosëse automatike 3300mm e lidhur në linjë me hekurosësen — prodhon çarçafë të palosura në mënyrë perfekte.',
     specs: ['Gjerësi: 3300mm', 'Palosje automatike', 'Linjë me Ironer', 'Output i lartë'],
@@ -54,15 +54,15 @@ export default function Teknologjia() {
       aria-labelledby="tech-heading"
       ref={ref}
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="px-6 mx-auto max-w-7xl">
 
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
-          <span className="font-mono text-xs text-blue-600 uppercase tracking-widest block mb-3">— Makineritë Tona</span>
-          <h2 id="tech-heading" className="font-condensed font-black text-5xl lg:text-6xl text-ink leading-none mb-4">
+        <div className="max-w-2xl mx-auto mb-16 text-center animate-on-scroll">
+          <span className="block mb-3 font-mono text-xs tracking-widest text-blue-600 uppercase">— Makineritë Tona</span>
+          <h2 id="tech-heading" className="mb-4 text-5xl font-black leading-none font-condensed lg:text-6xl text-ink">
             TEKNOLOGJIA<br /><span className="text-blue-600">E FUNDIT</span>
           </h2>
-          <p className="text-gray-500 text-lg">
+          <p className="text-lg text-gray-500">
             Investim kolosal në makineritë më të avancuara industriale — 
             e vetmja lavaneri në Shqipëri me këtë nivel teknologjie.
           </p>
@@ -87,19 +87,19 @@ export default function Teknologjia() {
                 <img
                   src={m.img}
                   alt={m.name}
-                  className="relative z-10 max-h-52 w-auto object-contain machine-glow"
+                  className="relative z-10 object-contain w-auto max-h-52 machine-glow"
                 />
-                <div className="absolute top-4 left-4 font-mono text-xs text-blue-400 uppercase tracking-widest">{m.label}</div>
-                <div className="absolute bottom-4 right-4 text-right">
-                  <div className="font-condensed font-black text-3xl text-white leading-none">{m.qty}</div>
+                <div className="absolute font-mono text-xs tracking-widest text-blue-400 uppercase top-4 left-4">{m.label}</div>
+                <div className="absolute text-right bottom-4 right-4">
+                  <div className="text-3xl font-black leading-none text-white font-condensed">{m.qty}</div>
                   <div className="font-mono text-xs text-blue-300">{m.capacity}</div>
                 </div>
               </div>
 
               {/* Text side */}
               <div className="p-10 lg:[direction:ltr] flex flex-col justify-center">
-                <h3 className="font-condensed font-black text-3xl text-ink mb-2">{m.name}</h3>
-                <p className="text-gray-500 leading-relaxed mb-6">{m.desc}</p>
+                <h3 className="mb-2 text-3xl font-black font-condensed text-ink">{m.name}</h3>
+                <p className="mb-6 leading-relaxed text-gray-500">{m.desc}</p>
                 <ul className="grid grid-cols-2 gap-2">
                   {m.specs.map((spec) => (
                     <li key={spec} className="flex items-center gap-2 text-sm text-gray-600">

@@ -13,14 +13,14 @@ export default function Kapaciteti() {
   return (
     <section
       id="kapaciteti"
-      className="py-24 relative overflow-hidden"
+      className="relative py-24 overflow-hidden"
       aria-labelledby="capacity-heading"
       ref={ref}
       style={{ background: 'linear-gradient(135deg, #060e2a 0%, #0a1840 100%)' }}
     >
       {/* Grid pattern */}
       <div
-        className="absolute inset-0 opacity-5 pointer-events-none"
+        className="absolute inset-0 pointer-events-none opacity-5"
         style={{
           backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)',
           backgroundSize: '40px 40px',
@@ -30,62 +30,62 @@ export default function Kapaciteti() {
       {/* Blue glow */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-800/20 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 px-6 mx-auto max-w-7xl">
 
         {/* Header */}
-        <div className="text-center mb-16 animate-on-scroll">
-          <span className="font-mono text-xs text-blue-400 uppercase tracking-widest block mb-3">— Kapaciteti & Fuqia</span>
-          <h2 id="capacity-heading" className="font-condensed font-black text-5xl lg:text-7xl text-white leading-none">
+        <div className="mb-16 text-center animate-on-scroll">
+          <span className="block mb-3 font-mono text-xs tracking-widest text-blue-400 uppercase">— Kapaciteti & Fuqia</span>
+          <h2 id="capacity-heading" className="text-5xl font-black leading-none text-white font-condensed lg:text-7xl">
             KAPACITET<br /><span className="text-blue-500">MAKSIMAL</span>
           </h2>
         </div>
 
         {/* Big number highlight */}
-        <div className="animate-on-scroll text-center mb-16">
-          <div className="inline-block relative">
-            <div className="font-condensed font-black text-[120px] lg:text-[180px] leading-none text-stroke-blue select-none">
+        <div className="inline-block mb-16 text-center lg:block animate-on-scroll">
+          <div className="relative inline-block">
+            <div className="font-condensed font-black text-[120px] lg:text-[120px] leading-none text-stroke-blue select-none">
               1.000
             </div>
-            <div className="absolute bottom-4 right-0 translate-x-full pl-4 text-left hidden lg:block">
-              <div className="font-condensed font-bold text-blue-400 text-2xl">KG / ORË</div>
-              <div className="font-body text-white/50 text-sm">Larim, Tharje,<br />Hekurosje & Palosje</div>
+            <div className="absolute right-0 pl-4 text-left translate-x-full bottom-4 lg:block">
+              <div className="text-2xl font-bold text-blue-400 font-condensed">KG / ORË</div>
+              <div className="text-sm font-body text-white/50">Larim, Tharje,<br />Hekurosje & Palosje</div>
             </div>
           </div>
         </div>
 
         {/* Stats grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
+        <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-4 bg-white/5">
           {stats.map((s, i) => (
             <div
               key={s.label}
-              className="animate-on-scroll bg-white/3 p-8 text-center hover:bg-blue-900/40 transition-colors duration-300"
+              className="p-8 text-center transition-colors duration-300 animate-on-scroll bg-white/3 hover:bg-blue-900/40"
               style={{ transitionDelay: `${i * 100}ms`, backgroundColor: 'rgba(255,255,255,0.03)' }}
             >
-              <div className="font-condensed font-black text-5xl text-white mb-1">
+              <div className="mb-1 text-5xl font-black text-white font-condensed">
                 {s.value}
-                <span className="text-blue-400 text-2xl ml-1">{s.unit}</span>
+                <span className="ml-1 text-2xl text-blue-400">{s.unit}</span>
               </div>
-              <div className="font-condensed font-bold text-blue-400 uppercase tracking-wider mb-2">{s.label}</div>
-              <div className="font-body text-white/40 text-xs leading-relaxed">{s.desc}</div>
+              <div className="mb-2 font-bold tracking-wider text-blue-400 uppercase font-condensed">{s.label}</div>
+              <div className="text-xs leading-relaxed font-body text-white/40">{s.desc}</div>
             </div>
           ))}
         </div>
 
         {/* Equipment summary */}
-        <div className="animate-on-scroll mt-12 border border-blue-800/50 p-8">
-          <div className="font-mono text-xs text-blue-500 uppercase tracking-widest mb-6 text-center">Inventari i Plotë i Makinerive</div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div className="hidden p-8 mt-12 border animate-on-scroll border-blue-800/50 md:block">
+          <div className="mb-6 font-mono text-xs tracking-widest text-center text-blue-500 uppercase">Inventari i Plotë i Makinerive</div>
+          <div className="grid gap-6 text-center sm:grid-cols-2 lg:grid-cols-4">
             {[
               { icon: '🫧', qty: '4×', name: 'Washer Extractors', sub: '50 KG secila' },
               { icon: '💨', qty: '4×', name: 'Tumble Dryers', sub: '50 KG secila' },
               { icon: '🏨', qty: '1×', name: 'Flatwork Ironer', sub: '3300mm' },
               { icon: '📦', qty: '1×', name: 'Folding Machine', sub: '3300mm' },
             ].map((item) => (
-              <div key={item.name} className="border border-blue-800/30 p-5 hover:border-blue-500 transition-colors duration-300">
-                <div className="text-3xl mb-2">{item.icon}</div>
-                <div className="font-condensed font-black text-blue-400 text-2xl">{item.qty}</div>
-                <div className="font-condensed font-bold text-white text-sm uppercase">{item.name}</div>
-                <div className="font-mono text-xs text-white/30 mt-1">{item.sub}</div>
+              <div key={item.name} className="p-5 transition-colors duration-300 border border-blue-800/30 hover:border-blue-500">
+                <div className="mb-2 text-3xl">{item.icon}</div>
+                <div className="text-2xl font-black text-blue-400 font-condensed">{item.qty}</div>
+                <div className="text-sm font-bold text-white uppercase font-condensed">{item.name}</div>
+                <div className="mt-1 font-mono text-xs text-white/30">{item.sub}</div>
               </div>
             ))}
           </div>
