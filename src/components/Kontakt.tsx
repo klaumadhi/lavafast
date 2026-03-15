@@ -84,7 +84,7 @@ export default function Kontakt() {
             <div className="p-6 mt-10 bg-white border border-gray-100 shadow-sm">
               <div className="mb-3 font-mono text-xs tracking-widest text-gray-400 uppercase">Shërbejmë</div>
               <div className="flex flex-wrap gap-2">
-                {['Hotele 5★', 'Hotele 4★', 'Hotele 3★', 'Restorante', 'Spa & Wellness', 'Klinika', 'Konvikte'].map((tag) => (
+                {['Hotele 5★', 'Hotele 4★', 'Hotele 3★', 'Restorante', 'Spa & Wellness','Spitale', 'Klinika', 'Konvikte'].map((tag) => (
                   <span key={tag} className="px-3 py-1 font-mono text-xs text-blue-700 border border-blue-100 bg-blue-50">
                     {tag}
                   </span>
