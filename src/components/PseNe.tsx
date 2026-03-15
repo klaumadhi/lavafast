@@ -52,7 +52,7 @@ export default function PseNe() {
             <div className="w-full mt-10">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-lg">📍</span>
-                <span className="font-bold font-condensed text-ink">Rruga Vëllazënimi 12, Durrës 2000</span>
+                <span className="font-bold font-condensed text-ink">Rruga Vellazerimi 12, Durrës 2001</span>
               </div>
               <div className="relative w-full h-56 overflow-hidden border border-blue-100 shadow-md">
                 <iframe

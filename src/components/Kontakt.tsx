@@ -63,7 +63,7 @@ export default function Kontakt() {
             {/* Contact details */}
             <div className="space-y-5">
               {[
-                { icon: '📍', label: 'Adresa', value: 'Rruga Vëllazënimi 12, Durrës 2000, Shqipëri' },
+                { icon: '📍', label: 'Adresa', value: 'Rruga Vellazerimi 12, Durrës 2001, Shqipëri' },
                 { icon: '📞', label: 'Telefon', value: '+355 69 824 2023' },
                 { icon: '📧', label: 'Email', value: 'lavafastal@gmail.com' },
                 { icon: '🕐', label: 'Orari', value: '24/7 — Operojmë pa ndërprerje' },

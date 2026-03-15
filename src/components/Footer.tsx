@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <div className="font-mono text-xs text-white/30 mb-0.5">Adresa</div>
-                <div className="text-sm text-white/60">Rruga Vëllazënimi 12<br />Durrës 2000, Shqipëri</div>
+                <div className="text-sm text-white/60">Rruga Vellazerimi 12<br />Durrës 2001, Shqipëri</div>
               </li>
               <li>
                 <div className="font-mono text-xs text-white/30 mb-0.5">Telefon</div>
