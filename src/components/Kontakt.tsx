@@ -23,14 +23,14 @@ export default function Kontakt() {
     e.preventDefault()
     setStatus('loading')
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+      const res = await fetch('https://formspree.io/f/xkoqvvpj', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(form),
       })
       setStatus(res.ok ? 'success' : 'error')
       if (res.ok) setForm({ emri: '', email: '', telefon: '', kompania: '', mesazhi: '' })
-    } catch {
+    } catch (_e: unknown){
       setStatus('error')
     }
   }
@@ -65,7 +65,7 @@ export default function Kontakt() {
               {[
                 { icon: '📍', label: 'Adresa', value: 'Rruga Vëllazënimi 12, Durrës 2000, Shqipëri' },
                 { icon: '📞', label: 'Telefon', value: '+355 69 824 2023' },
-                { icon: '📧', label: 'Email', value: 'info@lavafast.al' },
+                { icon: '📧', label: 'Email', value: 'lavafastal@gmail.com' },
                 { icon: '🕐', label: 'Orari', value: '24/7 — Operojmë pa ndërprerje' },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4">

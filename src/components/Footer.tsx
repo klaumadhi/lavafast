@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <div className="font-mono text-xs text-white/30 mb-0.5">Email</div>
-                <a href="mailto:info@lavafast.al" className="text-sm transition-colors text-white/60 hover:text-blue-400">info@lavafast.al</a>
+                <a href="mailto:info@lavafast.al" className="text-sm transition-colors text-white/60 hover:text-blue-400">lavafastal@gmail.com</a>
               </li>
             </ul>
           </div>
