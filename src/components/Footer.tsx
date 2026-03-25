@@ -66,6 +66,12 @@ export default function Footer() {
           <p className="font-mono text-xs text-white/20">
             Lavanderia Industriale Nr.1 në Shqipëri · Durrës
           </p>
+          <div className="mt-3 text-center">
+          <p className="font-mono text-xs text-white/15">
+            Built by{' '}
+            <a href="https://klaurent-portfolio.netlify.app/" target="_blank"  rel="noopener noreferrer" className="transition-colors cursor-default select-none text-blue-600/60 hover:text-blue-400">K. Madhi</a>
+          </p>
+        </div>
         </div>
       </div>
     </footer>

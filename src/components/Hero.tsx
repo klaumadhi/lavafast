@@ -22,6 +22,15 @@ export default function Hero() {
       aria-label="Faqja kryesore"
       style={{ background: 'linear-gradient(135deg, #060e2a 0%, #0a1535 50%, #0f2060 100%)' }}
     >
+
+      {/* SEO keyword block — visually hidden */}
+<div className="sr-only">
+  Lavanderi Durres. Lavanderi për hotele Shqipëri. Lavanderi për restorante. Lavanderi industriale. Lavanderi per Hotele dhe Biznese
+  Lavanderi për çarçafë dhe peshqirë. Lavanderi industriale Durres.
+  Lavanderi për biznese. LavaFast lavanderi. Lavanderi per carcafe.
+  Shërbim lavanderie për hotele dhe restorante në Durrës dhe të gjithë Shqipërinë.
+</div>
+
       {/* Background grid pattern */}
       <div
         className="absolute inset-0 pointer-events-none opacity-10"
