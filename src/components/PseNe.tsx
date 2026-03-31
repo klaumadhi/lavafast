@@ -67,7 +67,7 @@ export default function PseNe() {
                 />
                 {/* Overlay link to open in Google Maps */}
                 <a
-                  href="https://www.google.com/maps/place/8FJF%2BH4G,+Rruga+Vellazerimi,+Durr%C3%ABs,+Albania/@41.3313464,19.4722679,364m/data=!3m1!1e3!4m15!1m8!3m7!1s0x134fd97c5fbbbcc7:0x77f377eae6cd81ee!2sDurr%C3%ABs,+Albania!3b1!8m2!3d41.3245904!4d19.4564686!16zL20vMDFuMmdy!3m5!1s0x134fda02a5672acf:0x4e476cd3e41b69aa!8m2!3d41.3314541!4d19.4728791!16s%2Fg%2F11l5dclqp0?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/LavaFast/@41.3320959,19.4717082,623m/data=!3m2!1e3!4b1!4m6!3m5!1s0x134fd981568eb793:0x3b52aaab59d1c977!8m2!3d41.3320919!4d19.4742831!16s%2Fg%2F11nb42v08v?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-2 right-2 bg-blue-600 hover:bg-blue-700 text-white font-mono text-xs px-3 py-1.5 transition-colors duration-200 shadow-lg"

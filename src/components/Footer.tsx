@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <div className="font-mono text-xs text-white/30 mb-0.5">Telefon</div>
-                <a href="tel:+355000000000" className="text-sm transition-colors text-white/60 hover:text-blue-400">+355 69 824 2023</a>
+                <a href="tel:+355698242023" className="text-sm transition-colors text-white/60 hover:text-blue-400">+355 69 824 2023</a>
               </li>
               <li>
                 <div className="font-mono text-xs text-white/30 mb-0.5">Email</div>

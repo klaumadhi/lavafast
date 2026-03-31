@@ -64,7 +64,7 @@ export default function Teknologjia() {
           </h2>
           <p className="text-lg text-gray-500">
             Investim kolosal në makineritë më të avancuara industriale — 
-            e vetmja lavaneri në Shqipëri me këtë nivel teknologjie.
+            e vetmja lavanderi në Shqipëri me këtë nivel teknologjie.
           </p>
         </div>
 
